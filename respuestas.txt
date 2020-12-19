@@ -1,2 +1,33 @@
 viernes 18 de dic de 2020 , hora 21:23
 
+************************************************
+1.1. En que se diferencian métodos POST y GET?.
+    R/. La principal diferencia que las peticiones GET incluyen la información de la petición directamente
+    en la URL, mientras que las peticiones POST lo suelen hacer dentro del body. Esto tiene varias
+    implicaciones en los casos en los que se usan, siendo GET usualmente empleado cuando NO se envía
+    información sensible, ya que debido a su naturaleza dicha información está expuesta en la url del
+    navegador, se mantiene en el historial de navegación y son mucho mas fáciles de capturar por terceros,
+    hacíendoles más inseguras. Por otro lado las peticiones POST son más aptos para procesos donde la
+    información es sensible ya que es más segura, aunque la url queda en el historial, los parámetros del
+    body no quedan y no están disponibles en la url.
+
+    Adicionalmente, es importante también tener en cuenta que el tamaño de la información enviada  por las
+    peticiones GET está limitada, mientras que la enviada por POST no y además de permite codificación multiparte,
+    por lo que usualmente se emplea para cargar información al servidor, mientras que GET usualmente se emplea
+    para solicitar. 
+
+1.2. Ventajas de Ajax?.
+    R/. Ajax deja modificar páginas sin volver a cargarlas, por lo que, por un lado el usuario 
+    percibe los cambios al instante, empleando menos ancho de banda y tiempos de operación.
+    Ajax lo soportan muchos navegadores
+    Mejora la usabilidad al no requerir recargas completas de la página.
+
+1.3. Diferencia entre WebSockets y Ajax?.
+    R/. Ajax hace peticiones utilizando métodos HTTP, por lo que cuando se completa el flujo de comunicación
+     entre el cliente y el servidor la conexión se finaliza, mientras que WebSocket es un protocolo como tal
+     (diferente de HTTP) y funciona abriendo una conexión entre cliente y servidor y la mantiene viva aún
+     cuando el servidor ya haya contestado al cliente.
+
+1.4. Los métodos estáticos le pertenecen a una clase, mientras que los métodos no estáticos le pertenecen
+     a un objeto. Dicho de otra manera, los métodos estáticos se pueden emplear simplemente haciendo mención
+     a la clase, mientras que un método que no sea estático requiere una instancia como tal.
