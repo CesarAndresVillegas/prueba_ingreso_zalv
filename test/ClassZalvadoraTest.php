@@ -57,4 +57,26 @@ class ClassZalvadoraTest extends TestCase {
             'Prueba 6' => [null, $errorText]
         ];
     }
+
+    /**
+     * @test
+     * @dataProvider question2_3Provider
+     */
+    public function test_question2_3($size, $expected)
+    {
+        $response = Zalvadora::question2_3(array('N' => $size));
+        $this->assertEquals(typeof($expected), typeof($response));
+    }    
+
+    public function question2_3Provider() {
+        $textAux = 'auxiliar test';
+        $arrayAux = [];
+        // first item -> N input value required by the problem
+        // second item -> expected value
+        return [
+            'Prueba 1' => [2, []],
+            'Prueba 1' => [0, 'error'],
+            'Prueba 1' => ['hola', 'error']
+        ];
+    }
 }

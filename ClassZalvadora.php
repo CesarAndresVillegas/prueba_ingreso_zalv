@@ -11,7 +11,7 @@ class Zalvadora {
         return $response;
     }
 
-    public static function question2_2($getParams){
+    public static function question2_2($getParams) {
         $limitNumber = (int)$getParams["N"];
         // reduce process charge
         if($limitNumber == 2) {
@@ -45,6 +45,24 @@ class Zalvadora {
         else {
             $response = 'El número no es válido, debe ser mayor a 2 y debe estar en el parámetro N del get';
         }
+        return $response;
+    }
+
+    public static function question2_3($getParams) {
+        $number = (int)$getParams["N"];
+        
+        if($number > 0) {
+            $response = '';
+            for ($column=0; $column<$number; $column++) {
+                for ($row=0; $row<$number; $row++) {
+                    $response[$column][$row] = rand($number, 2*$number);
+                }
+            }
+        }
+        else {
+            $response = 'número inválido, debe ser mayor a 0 y debe estar en el parámetro N del get';
+        }
+        // if a array object is returned must be little bit easy to prueba 3
         return $response;
     }
 }
