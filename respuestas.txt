@@ -31,3 +31,11 @@ viernes 18 de dic de 2020 , hora 21:23
 1.4. Los métodos estáticos le pertenecen a una clase, mientras que los métodos no estáticos le pertenecen
      a un objeto. Dicho de otra manera, los métodos estáticos se pueden emplear simplemente haciendo mención
      a la clase, mientras que un método que no sea estático requiere una instancia como tal.
+
+
+
+*********************************************************
+- La prueba se construyo empleando php 7.3
+- En caso de problemas con archivos del vendor, se puede borrar dicha carpeta y el composer.lock y volver
+    a ejecutar el comando composer install
+- Para correr las pruebas unitarias es necesario ejecutar el comando vendor/bin/phpunit test/
