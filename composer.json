@@ -1,0 +1,14 @@
+{
+    "name": "cesar/prueba_zalvadora",
+    "description": "Zalvadora test file",
+    "type": "project",
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "authors": [
+        {
+            "name": "Cesar.Villegas.T",
+            "email": "cesarandresvillegas@gmail.com"
+        }
+    ]
+}
